@@ -1,0 +1,187 @@
+/* Site-wide dark theme — shared with SibirLinks and portfolio pages */
+
+:root {
+	--site-bg: #0c0f12;
+	--site-bg-alt: #080a0d;
+	--site-surface: #151a21;
+	--site-surface-2: #1a212b;
+	--site-surface-3: #1f2833;
+	--site-surface-hover: #1c232d;
+	--site-border: rgba(255, 255, 255, 0.08);
+	--site-text: rgba(255, 255, 255, 0.92);
+	--site-text-muted: rgba(255, 255, 255, 0.52);
+	--site-accent: #b84a3a;
+	--site-accent-soft: rgba(184, 74, 58, 0.18);
+	--site-accent-dark: #8b3a32;
+	--site-steam: #1b8cd8;
+	--site-steam-hover: #2196f3;
+	--site-radius: 0.65rem;
+	--site-max-links: 28rem;
+}
+
+/* Base */
+
+body {
+	background:
+		radial-gradient(ellipse 120% 80% at 50% -20%, var(--site-accent-soft), transparent 55%),
+		var(--site-bg) !important;
+	color: var(--site-text-muted);
+	font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Sections */
+
+.wrapper.alt {
+	background-color: var(--site-bg-alt) !important;
+}
+
+.wrapper.style1 {
+	background-color: var(--site-surface) !important;
+}
+
+.wrapper.style1-alt {
+	background-color: var(--site-bg-alt) !important;
+}
+
+.wrapper.style2 {
+	background-color: var(--site-surface-2) !important;
+}
+
+.wrapper.style2-alt {
+	background-color: var(--site-surface) !important;
+}
+
+.wrapper.style3 {
+	background-color: var(--site-surface-3) !important;
+}
+
+.wrapper.style3-alt {
+	background-color: var(--site-surface-2) !important;
+}
+
+/* Header */
+
+#header {
+	background-color: var(--site-surface) !important;
+	border-bottom: 1px solid var(--site-border);
+}
+
+/* Footer */
+
+#footer.wrapper.style1-alt {
+	background-color: var(--site-bg-alt) !important;
+}
+
+/* Sidebar */
+
+#sidebar {
+	background: var(--site-bg) !important;
+	border-right: 1px solid var(--site-border);
+}
+
+#sidebar nav a:before {
+	background: var(--site-surface-hover) !important;
+}
+
+#sidebar nav a:after {
+	background-image: linear-gradient(to right, var(--site-accent-dark), var(--site-accent)) !important;
+}
+
+@media screen and (max-width: 1280px) {
+	#sidebar nav a:after {
+		background-color: var(--site-accent) !important;
+	}
+}
+
+/* Intro */
+
+#intro {
+	background-image: none !important;
+	background-color: var(--site-surface) !important;
+}
+
+/* Typography accents */
+
+h1.major:after {
+	background-image: linear-gradient(to right, var(--site-accent-dark), var(--site-accent)) !important;
+}
+
+/* Icons */
+
+.icon.major {
+	background: var(--site-surface-hover) !important;
+	border: 1px solid var(--site-border);
+	color: var(--site-text) !important;
+}
+
+.wrapper.style1 .icon.major:before,
+.wrapper.style1-alt .icon.major:before,
+.wrapper.style2 .icon.major:before,
+.wrapper.style2-alt .icon.major:before,
+.wrapper.style3 .icon.major:before,
+.wrapper.style3-alt .icon.major:before {
+	color: var(--site-accent) !important;
+}
+
+/* Buttons */
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+button.primary,
+.button.primary {
+	background-color: var(--site-accent) !important;
+	border-color: transparent !important;
+	color: #ffffff !important;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+button.primary:hover,
+.button.primary:hover,
+input[type="submit"].primary:active,
+input[type="reset"].primary:active,
+input[type="button"].primary:active,
+button.primary:active,
+.button.primary:active {
+	background-color: var(--site-accent-dark) !important;
+}
+
+/* Spotlights */
+
+.spotlights > section > .image:before {
+	background: rgba(12, 15, 18, 0.88) !important;
+}
+
+.spotlights > section:nth-child(2) {
+	background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+.spotlights > section:nth-child(3) {
+	background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Forms */
+
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+	color: var(--site-accent) !important;
+}
+
+/* Contact icons */
+
+ul.icons a {
+	color: rgba(255, 255, 255, 0.45);
+}
+
+ul.icons a:hover {
+	color: var(--site-text) !important;
+}
+
+/* Forms */
+
+select option {
+	background: var(--site-surface) !important;
+}

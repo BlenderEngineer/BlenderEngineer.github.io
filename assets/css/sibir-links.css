@@ -1,0 +1,201 @@
+/* Sibir official links page */
+
+body.sibir-links {
+	margin: 0;
+	min-height: 100vh;
+	color: var(--site-text);
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+body.sibir-links.is-preload * {
+	transition: none !important;
+}
+
+.sibir-links__page {
+	margin: 0 auto;
+	max-width: var(--site-max-links);
+	min-height: 100vh;
+	padding: 2.5rem 1.25rem 2rem;
+}
+
+.sibir-links__brand {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.sibir-links__logo {
+	color: var(--site-text);
+	font-size: 2.25rem;
+	font-weight: 700;
+	letter-spacing: 0.38em;
+	margin: 0 0 0.35rem;
+	text-indent: 0.38em;
+	text-transform: uppercase;
+}
+
+.sibir-links__tagline {
+	color: var(--site-text-muted);
+	font-size: 0.95rem;
+	letter-spacing: 0.04em;
+	margin: 0 0 0.5rem;
+}
+
+.sibir-links__studio {
+	color: var(--site-accent);
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.22em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.sibir-links__hero {
+	border: 1px solid var(--site-border);
+	border-radius: var(--site-radius);
+	margin-bottom: 2rem;
+	overflow: hidden;
+}
+
+.sibir-links__hero img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+.sibir-links__section {
+	margin-bottom: 1.75rem;
+}
+
+.sibir-links__section-title {
+	color: var(--site-text-muted);
+	font-size: 0.68rem;
+	font-weight: 600;
+	letter-spacing: 0.18em;
+	margin: 0 0 0.75rem;
+	text-transform: uppercase;
+}
+
+.sibir-links__list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sibir-link {
+	align-items: center;
+	background: var(--site-surface);
+	border: 1px solid var(--site-border);
+	border-radius: var(--site-radius);
+	color: var(--site-text);
+	display: flex;
+	gap: 0.9rem;
+	padding: 0.85rem 1rem;
+	text-decoration: none;
+	transition:
+		background 0.2s ease,
+		border-color 0.2s ease,
+		transform 0.2s ease;
+}
+
+.sibir-link:hover,
+.sibir-link:focus-visible {
+	background: var(--site-surface-hover);
+	border-color: rgba(255, 255, 255, 0.16);
+	outline: none;
+	transform: translateY(-1px);
+}
+
+.sibir-link--primary {
+	background: linear-gradient(135deg, #1668a8 0%, var(--site-steam) 100%);
+	border-color: rgba(255, 255, 255, 0.12);
+}
+
+.sibir-link--primary:hover,
+.sibir-link--primary:focus-visible {
+	background: linear-gradient(135deg, #1874b8 0%, var(--site-steam-hover) 100%);
+	border-color: rgba(255, 255, 255, 0.22);
+}
+
+.sibir-link__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	font-size: 1.2rem;
+	height: 1.35rem;
+	justify-content: center;
+	width: 1.35rem;
+}
+
+.sibir-link__icon svg {
+	display: block;
+	fill: currentColor;
+	height: 1.2rem;
+	width: 1.2rem;
+}
+
+.sibir-link__text {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: 0.1rem;
+	min-width: 0;
+}
+
+.sibir-link__label {
+	font-size: 0.95rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+.sibir-link__hint {
+	color: var(--site-text-muted);
+	font-size: 0.78rem;
+}
+
+.sibir-link--primary .sibir-link__hint {
+	color: rgba(255, 255, 255, 0.78);
+}
+
+.sibir-link__arrow {
+	color: var(--site-text-muted);
+	flex-shrink: 0;
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.sibir-link--primary .sibir-link__arrow {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.sibir-links__footer {
+	border-top: 1px solid var(--site-border);
+	color: var(--site-text-muted);
+	font-size: 0.78rem;
+	margin-top: 2.5rem;
+	padding-top: 1.25rem;
+	text-align: center;
+}
+
+.sibir-links__footer a {
+	color: rgba(255, 255, 255, 0.65);
+	text-decoration: none;
+}
+
+.sibir-links__footer a:hover,
+.sibir-links__footer a:focus-visible {
+	color: var(--site-text);
+}
+
+@media (max-width: 480px) {
+	.sibir-links__page {
+		padding: 1.75rem 1rem 1.5rem;
+	}
+
+	.sibir-links__logo {
+		font-size: 1.9rem;
+	}
+}
