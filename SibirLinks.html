@@ -15,10 +15,20 @@
 		<link rel="stylesheet" href="assets/css/site-theme.css" />
 		<link rel="stylesheet" href="assets/css/image-lightbox.css" />
 		<link rel="stylesheet" href="assets/css/sibir-links.css" />
+		<style>
+			/* additional micro adjustment for feedback link alignment */
+			.sibir-link--feedback .sibir-link__icon {
+				opacity: 0.9;
+			}
+			.sibir-link--feedback:hover {
+				background: rgba(40, 44, 52, 0.6);
+				border-color: rgba(200, 180, 100, 0.5);
+			}
+		</style>
 	</head>
 	<body class="sibir-links is-preload">
 
-		<main class="sibir-links__page">
+		<main class="bir-links__page">
 			<header class="sibir-links__brand">
 				<h1 class="sibir-links__logo">Sibir</h1>
 				<p class="sibir-links__tagline">Soviet-era survival horror extraction</p>
@@ -39,6 +49,17 @@
 							<span class="sibir-link__text">
 								<span class="sibir-link__label">Steam</span>
 								<span class="sibir-link__hint">Wishlist and play the demo</span>
+							</span>
+							<span class="sibir-link__arrow" aria-hidden="true">&#8594;</span>
+						</a>
+					</li>
+					<!-- new feedback link below the Steam link as requested -->
+					<li>
+						<a class="sibir-link sibir-link--feedback" href="https://forms.gle/YtQFwnBQ5MGN8CpFA" rel="noopener noreferrer" target="_blank">
+							<span class="sibir-link__icon" aria-hidden="true"><i class="fas fa-comment"></i></span>
+							<span class="sibir-link__text">
+								<span class="sibir-link__label">Found a bug?</span>
+								<span class="sibir-link__hint">Report issues or share your thoughts how we can improve the game here</span>
 							</span>
 							<span class="sibir-link__arrow" aria-hidden="true">&#8594;</span>
 						</a>
